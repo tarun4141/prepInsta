@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+bool isE(int n){
+    return (!(n&1));
+}
+
+int main() {
+    // Write C++ code here
+    int n=8;
+    
+    if(isE(n)) cout<<"even";
+    else cout<<"odd";
+    
+
+    return 0;
+}
