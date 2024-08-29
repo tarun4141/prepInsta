@@ -1,0 +1,23 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+   int num=5;
+   int p=2;
+   int ans=pow(num,p);
+   cout<<ans;
+   
+   int n=5;
+   p=2;
+   int res=1;
+   
+   while(p>0){
+       res*=n;
+       p--;
+   }
+   cout<<res;
+   
+   
+}
