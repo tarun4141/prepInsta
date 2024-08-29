@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+int order(int x){
+    int len=0;
+    while(x){
+        x/=10;
+        len++;
+    }
+    return len;
+}
+bool ar(int num,int len){
+    int sum=0,temp,digit;
+    temp=num;
+    while(temp>0){
+        digit=temp%10;
+        sum+=pow(digit,len);
+        temp/=10;
+    }
+    return num==sum;
+}
+
+int main() {
+ int n=407,len;
+ len=order(n);
+ if(ar(n,len)) cout<<"yes";
+ else cout<<"no";
+ 
+    return 0;
+}
