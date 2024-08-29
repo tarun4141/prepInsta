@@ -1,0 +1,73 @@
+///sol -1
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+
+
+int main() {
+   int n=21;
+   int c=0;
+   
+   for(int i=1;i<n;i++){
+       if(n%i==0) c++;
+   }
+   if(n==0 ||n==1) cout<<"non prime";
+   else if(c>2) cout<<"non prime";
+   else cout<<"prime";
+
+    return 0;
+}
+
+//sol-2
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int main() {
+   int n=21;
+   bool isp=true;
+   if(n<2) isp=false;
+   else{
+       for(int i=2;i<n/2;i++){
+           if(n%i==0){
+               isp=false;
+               break;
+           }
+       }
+   }
+   string r=isp?"p":"np";
+   cout<<r;
+   
+   
+   
+    return 0;
+}
+
+//sol-3
+
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int main() {
+   int n=21,i;
+   bool isp=true;
+   if(n<2) isp=false;
+   else{
+       for( i=2;i<sqrt(n);i++){
+           if(n%i==0){
+               isp=false;
+               break;
+           }
+       }
+   }
+   string r=isp?"p":"np";
+   cout<<r;
+   
+   
+   
+    return 0;
+}
+
+
+
+
