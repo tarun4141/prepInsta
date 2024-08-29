@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+
+int main() {
+   int num=1234;
+   int sum=0;
+   while(num>0){
+   int a=num%10;
+  sum=sum*10+a;
+ //sum+=a;
+   num/=10;
+   }
+   cout<<sum;
+   
+   
+    return 0;
+}
