@@ -1,0 +1,27 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int Fact(int n){
+    int p=1;
+    for(int i=1;i<=n;i++){
+        p*=i;
+    }
+    return p;
+}
+
+
+int main() {
+    int n=145;
+    int d,t,l,p=0;
+    t=n;
+    
+    while(t!=0){
+        d=t%10;
+        p=p+Fact(d);
+        t/=10;
+    }
+    cout<<p;
+    
+    
+   return 0;
+}
