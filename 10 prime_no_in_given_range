@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+bool isp(int n){
+    bool p=true;
+    
+    if(n<2) p=false;
+    else {
+        for(int i=2;i<=sqrt(n);i++){
+            if(n%i==0){
+                p=false;
+                break;
+            }
+        }
+    }
+   return p; 
+}
+
+
+int main() {
+   int l,u;
+   l=1,u=100;
+   
+   for(int i=l;i<=u;i++){
+       if(isp(i)){
+           cout<<i<<" ";
+       }
+   }
+   
+   
+   
+    return 0;
+}
