@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+
+
+int main() {
+    int year=2025;
+    if(year%400==0) cout<<"leap";
+    else if(year%4==0 &&year%100!=0) cout<<"leap";
+    else cout<<"not aleap";
+
+    return 0;
+}
